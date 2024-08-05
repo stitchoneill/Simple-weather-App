@@ -1,4 +1,4 @@
-const apiKey = '1c3f461e7c1add65cae2e36a9be61df2'; // Your OpenWeatherMap API key
+const apiKey = '1c3f461e7c1add65cae2e36a9be61df2';
 const searchBtn = document.getElementById('searchBtn');
 const cityInput = document.getElementById('city');
 const cityName = document.getElementById('cityName');
@@ -7,7 +7,7 @@ const description = document.getElementById('description');
 const weatherInfo = document.querySelector('.weather-info');
 
 searchBtn.addEventListener('click', () => {
-    const city = cityInput.value; // Use .value to get the input value
+    const city = cityInput.value;
     if (city) {
         console.log(`Fetching weather data for: ${city}`);
         getWeather(city);
